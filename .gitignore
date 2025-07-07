@@ -1,0 +1,9 @@
+target
+*.so
+__pycache__
+.venv
+.env
+venv
+env
+poetry.lock
+temp

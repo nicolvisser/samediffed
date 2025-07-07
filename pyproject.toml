@@ -1,0 +1,32 @@
+[project]
+name = "samediffed"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "nicolvisser",email = "vissernicol@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "polars (>=1.31.0,<2.0.0)",
+    "numpy (>=2.3.1,<3.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "scikit-learn (>=1.7.0,<2.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "soundfile (>=0.13.1,<0.14.0)",
+    "tgt (>=1.5,<2.0)"
+]
+
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+module-name = "samediffed._rusted"
+manifest-path = "rusted/Cargo.toml"
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
