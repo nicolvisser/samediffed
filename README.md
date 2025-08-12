@@ -21,7 +21,7 @@ The same-different evaluation was proposed by Carlin et. al. in [Rapid Evaluatio
     ```sh
     git clone https://github.com/nicolvisser/samediffed.git
     cd samediffed
-    pip install .
+    pip install -e .
     ```
 
 ## Data preparation
